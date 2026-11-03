@@ -1,0 +1,13 @@
+{
+  "stage": "appearance_eye_support_check_20261025",
+  "frozen_before_live": true,
+  "software_tests": 243,
+  "model_pack_sha256": "084a8c390419d5936207665832d1b9151759a2730110ac17a10c46c34db03aef",
+  "plan": "Existing CHECK_TARGETS center reference then rest/help/center/more/water, about43s. Normal blinks, limited natural head movement, lampOFF. Five NEW center features; no selection/audio/UART.",
+  "seed_evidence": "data/private/bringup/appearance_corner_check_20261025",
+  "seed_original_pack": "data/private/diagnostic/previous_model.npz",
+  "entry_gate": "Each scored target at least60percent stable matching, zero raw/stable wrong, longest stable at least1s. These are correlated frames, not independent accuracy.",
+  "changes": "Feature crop now x134..374 instead of116..418; vertical132..266. No classification/temporal/dwell threshold reduction. Model and software changed, old positive evidence cannot authorize eye-trial.",
+  "actions_enabled": false,
+  "patch_sha256": "1b30ee37207c1a3564810a9cf9402e2bad8deb964416ce4ed59ca65653e1f2eb"
+}

@@ -1,0 +1,49 @@
+{
+  "source": {
+    "file": "frequency.txt",
+    "url": "https://raw.githubusercontent.com/fxsjy/jieba/67fa2e36e72f69d9134b8a1037b83fbb070b9775/jieba/dict.txt",
+    "sha256": "7197c3211ddd98962b036cdf40324d1ea2bfaa12bd028e68faa70111a88e12a8",
+    "bytes": 5071852
+  },
+  "source_license": "MIT; full jieba_license.txt and pinyin_license.txt alongside",
+  "character_dictionary_sha256": "583359d5f7e3aee71d630885f406a9f7b45f8750d5e5ef0983d03ac0c8137c06",
+  "words_sha256": "a1f591e798ef833b90c20a3988bf1e8d7e40ec4add61107b8f5d136fe4f0303c",
+  "single_characters": 5000,
+  "multi_character_words": 12010,
+  "bytes": 419006,
+  "transformation": "Top 12000 frequency-ranked supported 2–6-character words, 13 authored connective fragments, all supported single characters. First-listed reading plus 11 explicit common-word reading overrides ranked first; up to 16 alternate aliases. No cloud or automatic text insertion.",
+  "pronunciation_source": {
+    "file": "pinyin.txt",
+    "url": "https://raw.githubusercontent.com/mozillazg/pinyin-data/9d05c9e29cb6a7e5c79f2f5279f5c1014246a19a/pinyin.txt",
+    "sha256": "90c11bd680ccfe7f2617a6e25abdb1fb87b5540df3e6f011ca50aaf3c7263a89",
+    "bytes": 985559
+  },
+  "authored_fragments": [
+    "我想",
+    "我觉得",
+    "帮我",
+    "和你",
+    "陪我",
+    "有点",
+    "不想",
+    "听音乐",
+    "看视频",
+    "看照片",
+    "慢一点",
+    "一会儿",
+    "谢谢你"
+  ],
+  "common_reading_overrides": {
+    "音乐": "yy",
+    "银行": "yh",
+    "行走": "xz",
+    "觉得": "jd",
+    "了解": "lj",
+    "重庆": "cq",
+    "重复": "cf",
+    "重新": "cx",
+    "长大": "zd",
+    "快乐": "kl",
+    "行为": "xw"
+  }
+}

@@ -1,0 +1,7 @@
+'Titan' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au
+Track: https://www.scottbuckley.com.au/library/titan/
+License: https://creativecommons.org/licenses/by/4.0/
+Changes: 124.5-169.5 second excerpt; fades, EQ, level adjustments, ducking, synchronization with B1 and synthetic narration; board version mono/16kHz.
+No endorsement is implied. Retain this attribution with the video; if uploaded to YouTube, include it in the description.
+Narration: Microsoft Yunjian synthetic voice via edge-tts.
+Visuals: project-generated illustrative AMD/Ryzen concept scenes, not official advertising.

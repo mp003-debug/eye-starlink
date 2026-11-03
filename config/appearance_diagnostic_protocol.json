@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-25",
+  "phase": "fresh center-referenced candidate diagnostic; no actions",
+  "runtime_manifest": {
+    "expected_files": {
+      "src/eye_tracker/board.py": "713e7fae4b0a0357c2c0ee31b0e9905e9a77fa237bcccb3d33ef2b696e2c934b",
+      "src/eye_tracker/appearance.py": "20333f92e138caa261664a76d71e30aa07281fdf65077a8f4be5b632a67aac1b",
+      "src/eye_tracker/appearance_diagnostic.py": "83d7fa08a92e9092e580efdd479f1fc28d2635cc7163d100be4dcfe3fbf5f536",
+      "data/private/diagnostic/model.npz": "f4d6cff76449b8909ec088db5ffc2ff6f211c5f96df70f52ed9e6421f128dce6"
+    },
+    "expected_bit_sha256": "1d546b9c7b63825ce075798df87aacccfa78fe37d3d26e379fd1dec6aca59ebc",
+    "files": {
+      "src/eye_tracker/board.py": "713e7fae4b0a0357c2c0ee31b0e9905e9a77fa237bcccb3d33ef2b696e2c934b",
+      "src/eye_tracker/appearance.py": "20333f92e138caa261664a76d71e30aa07281fdf65077a8f4be5b632a67aac1b",
+      "src/eye_tracker/appearance_diagnostic.py": "ad11e52e069a25bdbedd8748798e01ef9944513ab8071b06680294175a33314c",
+      "data/private/diagnostic/model.npz": "f4d6cff76449b8909ec088db5ffc2ff6f211c5f96df70f52ed9e6421f128dce6"
+    },
+    "scope": "Whole-frame reacquisition only during explicit center reference; candidate-only checks; no actions/audio/UART; old audio FPGA retained."
+  },
+  "patch_sha256": "e78beb46782fd815766845591a68ddbb761aa70cbb9a96d6d02ca2fbb0ef502f",
+  "model_pack_sha256": "f4d6cff76449b8909ec088db5ffc2ff6f211c5f96df70f52ed9e6421f128dce6",
+  "fixed_before_next_live_run": true,
+  "plan": [
+    "center_reference",
+    "rest",
+    "help",
+    "center_check",
+    "more",
+    "water"
+  ],
+  "initial_seconds": 6,
+  "each_target_seconds": 6,
+  "score_after_seconds": 2,
+  "temporal_gate": {
+    "minimum_consecutive_frames": 5,
+    "minimum_span_seconds": 0.35,
+    "maximum_gap_seconds": 0.25,
+    "maximum_copy_age_seconds": 0.15
+  },
+  "known_training_conflict": "sample42 instructed water, candidate help; partial lid closure. Not waived or hidden. No validated blink detector.",
+  "progression_rule": "Report every raw/stable wrong result; no action path. Zero stable wrong plus usable coverage would justify separate negative-input tests only.",
+  "optimization": "Quarter-size coarse skin translation, two native corner templates, bounded similarity crop; five center-reference samples, median frozen offset, same classifier gates",
+  "software_tests_passed": 200,
+  "source_hashes": {
+    "src/eye_tracker/appearance.py": "20333f92e138caa261664a76d71e30aa07281fdf65077a8f4be5b632a67aac1b",
+    "src/eye_tracker/appearance_diagnostic.py": "ad11e52e069a25bdbedd8748798e01ef9944513ab8071b06680294175a33314c",
+    "src/eye_tracker/fixation.py": "36c3bd93c6551ca6a7971425a898ae1762d757e656d09f8d5c7ddca6bbd12a2f"
+  },
+  "center_reference_policy": {
+    "samples": 5,
+    "minimum_coherent": 3,
+    "within_reference_rms": 0.05,
+    "maximum_offset_rms": 0.18,
+    "used_for_evaluation": false,
+    "updates_during_checks": false
+  },
+  "setup_relocation": {
+    "phase": "first eligible center sample only",
+    "full_frame_score_min": 0.9,
+    "spatial_peak_margin_min": 0.04,
+    "per_frame_window_unchanged": true,
+    "identity_or_crop_failure_rejected": true
+  }
+}

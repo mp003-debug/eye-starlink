@@ -1,0 +1,94 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) @CompanyNameMagicTag 2023-2023. All rights reserved.
+#===============================================================================
+
+config SLE_UART_BUS
+    int
+    prompt "Set the UART BUS of the currrent sample."
+    default 0
+    depends on SAMPLE_SUPPORT_SLE_UART
+    help
+        This option means the UART BUS of the currrent sample.
+
+config UART_TXD_PIN
+    int
+    prompt "Choose UART TXD pin."
+    depends on SAMPLE_SUPPORT_SLE_UART
+    default 17
+
+config UART_RXD_PIN
+    int
+    prompt "Choose UART RXD pin."
+    depends on SAMPLE_SUPPORT_SLE_UART
+    default 18
+
+choice
+    prompt "Select sle uart type"
+    default SAMPLE_SUPPORT_SLE_UART_SERVER
+    config SAMPLE_SUPPORT_SLE_UART_SERVER
+        bool "Enable SLE UART Server sample."
+    config SAMPLE_SUPPORT_SLE_UART_CLIENT
+        bool "Enable SLE UART Client sample."
+endchoice
+
+menu "Select SLE UART sample mode"
+choice
+    prompt "Select sle uart sample type"
+    default SAMPLE_SUPPORT_NORMAL_TYPE
+    config SAMPLE_SUPPORT_NORMAL_TYPE
+        bool "Enable SLE UART normal sample."
+    config SAMPLE_SUPPORT_LOW_LATENCY_TYPE
+        bool "Enable SLE UART low latency sample."
+endchoice
+
+config SAMPLE_SUPPORT_PERFORMANCE_TYPE
+    bool
+    prompt "Set the currrent sample in PERFORMANCE mode."
+    default n
+    depends on SAMPLE_SUPPORT_LOW_LATENCY_TYPE
+    help
+        This option means the currrent sample is in performance mode.
+endmenu
+
+
+config SUPPORT_SLE_PERIPHERAL
+    bool
+    default y if (SAMPLE_SUPPORT_SLE_UART_SERVER)
+
+
+config SUPPORT_SLE_CENTRAL
+    bool
+    default y if (SAMPLE_SUPPORT_SLE_UART_CLIENT)
+
+config SAMPLE_SUPPORT_WEARABLE_EPD
+    bool "Wearable 4.26 inch e-paper receiver (boards 3/4)."
+    default n
+    depends on SAMPLE_SUPPORT_SLE_UART_SERVER
+    help
+        Use the verified SSD1677 SPI wiring, two keys and a red LED instead of UART HMI.
+
+config SAMPLE_SUPPORT_EYE_LINK
+    bool "Eye event v1 SLE link (home screen B or wearable C/D)."
+    default n
+    depends on SAMPLE_SUPPORT_SLE_UART_SERVER
+    help
+        Use the teammate's 16-byte eye event protocol and SLE transport.
+        Replaces the old ASCII SLE UART demo; select a receiver identity below.
+
+if SAMPLE_SUPPORT_EYE_LINK
+choice
+    prompt "Eye event receiver identity"
+    default EYE_LINK_NODE_C if SAMPLE_SUPPORT_WEARABLE_EPD
+    default EYE_LINK_NODE_B
+    config EYE_LINK_NODE_B
+        bool "Board 2 / node B / address suffix 02 / UART HMI"
+        depends on !SAMPLE_SUPPORT_WEARABLE_EPD
+    config EYE_LINK_NODE_C
+        bool "Board 3 / node C / address suffix 03"
+        depends on SAMPLE_SUPPORT_WEARABLE_EPD
+    config EYE_LINK_NODE_D
+        bool "Board 4 / node D / address suffix 04"
+        depends on SAMPLE_SUPPORT_WEARABLE_EPD
+endchoice
+endif

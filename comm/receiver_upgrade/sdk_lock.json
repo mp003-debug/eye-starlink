@@ -1,0 +1,85 @@
+{
+  "commit": "7cda10e7476d8df35f0ac1a4013eb395874247e0",
+  "tag": "1.10.106",
+  "selected_files": [
+    {
+      "path": "include/cfbb_version.h",
+      "sha256": "4c98d4bb9a0eac7e3f824a678cec264d259d0ed1b248e021a9a911222345fd29"
+    },
+    {
+      "path": "include/middleware/utils/sdk_version.h",
+      "sha256": "e41e70ab4986cdc6fedd89665b8f99573a90f168df687bef4617c70f4535493a"
+    },
+    {
+      "path": "include/middleware/services/bts/sle/sle_common.h",
+      "sha256": "0a39d1562d0b8095a4d3d44f57a8c97e226cdc617660c75d75a93b0c8b2e28f5"
+    },
+    {
+      "path": "include/middleware/services/bts/sle/sle_device_discovery.h",
+      "sha256": "682d6da5768a8ceaca05f3c99fb3dc171419c7a43b0eac93d2d7676529a0c56b"
+    },
+    {
+      "path": "include/middleware/services/bts/sle/sle_connection_manager.h",
+      "sha256": "7adf518403e8a4316cfa2c51a7a6581f4d316853abc2785fe5308e3ca3e79dee"
+    },
+    {
+      "path": "include/middleware/services/bts/sle/sle_ssap_client.h",
+      "sha256": "505969103c0de01ac3158d541a765469765da9375ebaa4e3feee94ed49421c1b"
+    },
+    {
+      "path": "include/middleware/services/bts/sle/sle_ssap_server.h",
+      "sha256": "60950b2e8eb8b3d047b0a060a3329f56f148efa50821b4571e459fbb78c695fd"
+    },
+    {
+      "path": "include/middleware/services/bts/sle/sle_ssap_stru.h",
+      "sha256": "fffd61543e9c57642cbcaf3118450257a8349efe221b2de07135174d7c8d394d"
+    },
+    {
+      "path": "include/middleware/services/bts/sle/sle_errcode.h",
+      "sha256": "aab40dd25f85c917bb3870d84043003e893920bc802a4378229f95c717824299"
+    },
+    {
+      "path": "protocol/bt/controller/bgtp/ws63-liteos-app/libbgtp.a",
+      "sha256": "940fa6906a041adc3d932a9f0c7d212d6c4fc43d8a71a4b8fcc4e2b87f68b791"
+    },
+    {
+      "path": "protocol/bt/controller/bgtp/ws63-liteos-app/libbgtp_rom_data.a",
+      "sha256": "88f09bd253e9cd854cea22d552490034ae799e8fa1383b67872ccb7051dce68d"
+    },
+    {
+      "path": "protocol/bt/host/bg_common/ws63-liteos-app/libbg_common.a",
+      "sha256": "73dd23036dbc8ef1298654579f63e514339a6953d94da5644a79e2a2824c667e"
+    },
+    {
+      "path": "protocol/bt/host/bt/ws63-liteos-app/libbt_app.a",
+      "sha256": "3275682b34b0f774ae319d714380df4b16916fc8776422ef514288628319b3c3"
+    },
+    {
+      "path": "protocol/bt/host/bt/sdk/ws63-liteos-app/libbth_sdk.a",
+      "sha256": "afe062b6e73f4bb6db2e77fa5c5c11f2a3e3b9d6d78d1c50642dd51ae1917a74"
+    },
+    {
+      "path": "protocol/bt/host/bt/ws63-liteos-app/libbt_host.a",
+      "sha256": "0b74e1320b46a23621187cdd98b3cf54e3a249df51a65d89c6508d9d69bd05a8"
+    },
+    {
+      "path": "protocol/bt/host/gle/ws63-liteos-app/libbth_gle.a",
+      "sha256": "eed4f1d49c6c340254c086e78044f05090ffecb7bee08f2c0a215e144cc51e6b"
+    },
+    {
+      "path": "protocol/bt/controller/chba/ws63-liteos-app/libsle_netdev.a",
+      "sha256": "af0277957153111626c1257da6bb1cdc416d4f1f442cc5bcabb871192776fcdb"
+    },
+    {
+      "path": "middleware/utils/at/at_bt_cmd/ws63-liteos-app/libbt_at.a",
+      "sha256": "9be14e8827ad66350fe5455256074cd9a3cc62f1185d8d9776d55e14fb753f48"
+    }
+  ],
+  "selected_match_count": 18,
+  "scope": "18 selected files match teammate; not whole SDK identity",
+  "initial_commit": "5b155f39aac902e52e5b3a835fae19851afa0623",
+  "initial_build_failure": "Official intermediate commit lacked memory_info.c; formal tag includes it.",
+  "backed_up_tracked_edits": [
+    "src/build/config/target_config/ws63/menuconfig/acore/ws63_liteos_app.config"
+  ]
+}

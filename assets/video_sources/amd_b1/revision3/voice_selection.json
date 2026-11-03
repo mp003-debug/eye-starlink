@@ -1,0 +1,19 @@
+{
+  "Name": "Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)",
+  "ShortName": "zh-CN-YunjianNeural",
+  "Gender": "Male",
+  "Locale": "zh-CN",
+  "LocaleName": "Chinese (Mandarin, Simplified)",
+  "SuggestedCodec": "audio-24khz-48kbitrate-mono-mp3",
+  "FriendlyName": "Microsoft Yunjian Online (Natural) - Chinese (Mainland)",
+  "Status": "GA",
+  "VoiceTag": {
+    "ContentCategories": [
+      "Sports",
+      " Novel"
+    ],
+    "VoicePersonalities": [
+      "Passion"
+    ]
+  }
+}

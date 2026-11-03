@@ -1,0 +1,16 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.v text eol=lf
+*.tcl text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.bit binary
+*.hwh binary
+*.npz binary
+*.bin binary
+*.wav binary
+*.rgb565 binary
+*.otf binary
+*.png binary

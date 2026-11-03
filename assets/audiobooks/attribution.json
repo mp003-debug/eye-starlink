@@ -1,0 +1,34 @@
+{
+  "original_text": true,
+  "synthetic_voice": true,
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "-12%",
+  "pitch": "-6Hz",
+  "service": "Microsoft Edge online TTS via installed edge-tts",
+  "source": "https://github.com/rany2/edge-tts",
+  "third_party_recording_used": false,
+  "scope": "Local project samples; original fiction, no clinical benefit claim",
+  "chapters": [
+    {
+      "id": "rain_bookshop",
+      "seconds": 80.136,
+      "bytes": 2564396,
+      "peak": 7600,
+      "gain": 0.4216600088770528
+    },
+    {
+      "id": "mountain_letter",
+      "seconds": 80.304,
+      "bytes": 2569772,
+      "peak": 7600,
+      "gain": 0.3367450928264433
+    },
+    {
+      "id": "evening_bakery",
+      "seconds": 86.928,
+      "bytes": 2781740,
+      "peak": 7600,
+      "gain": 0.40318302387267907
+    }
+  ]
+}

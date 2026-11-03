@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "tracks": [
+    {
+      "id": "rain_bookshop",
+      "title": "雨后的小书店",
+      "file": "rain_bookshop.wav",
+      "sha256": "46495295d757a358547c61ae521becfd76555c8288a24d02712042a50e2bd2fd"
+    },
+    {
+      "id": "mountain_letter",
+      "title": "山间的来信",
+      "file": "mountain_letter.wav",
+      "sha256": "b6e034308464475639d271118a8188dbc107062a8a86b4f4f165f3f662e86917"
+    },
+    {
+      "id": "evening_bakery",
+      "title": "黄昏的面包店",
+      "file": "evening_bakery.wav",
+      "sha256": "aa0ab710e6de2aed93d9d14453984963aede0cc339a410adf06790d88b07763b"
+    }
+  ]
+}

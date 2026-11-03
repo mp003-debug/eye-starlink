@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "file": "pinyin.txt",
+      "url": "https://raw.githubusercontent.com/mozillazg/pinyin-data/9d05c9e29cb6a7e5c79f2f5279f5c1014246a19a/pinyin.txt",
+      "sha256": "90c11bd680ccfe7f2617a6e25abdb1fb87b5540df3e6f011ca50aaf3c7263a89",
+      "bytes": 985559
+    },
+    {
+      "file": "pinyin_license.txt",
+      "url": "https://raw.githubusercontent.com/mozillazg/pinyin-data/9d05c9e29cb6a7e5c79f2f5279f5c1014246a19a/LICENSE",
+      "sha256": "9c048697be2502a16e8bcb282d5d465a07295b2def0ffb05a269c5d39dbe1586",
+      "bytes": 1076
+    },
+    {
+      "file": "frequency.txt",
+      "url": "https://raw.githubusercontent.com/fxsjy/jieba/67fa2e36e72f69d9134b8a1037b83fbb070b9775/jieba/dict.txt",
+      "sha256": "7197c3211ddd98962b036cdf40324d1ea2bfaa12bd028e68faa70111a88e12a8",
+      "bytes": 5071852
+    },
+    {
+      "file": "jieba_license.txt",
+      "url": "https://raw.githubusercontent.com/fxsjy/jieba/67fa2e36e72f69d9134b8a1037b83fbb070b9775/LICENSE",
+      "sha256": "18ba0984839f85853b29fadaf992f7dba8fd0ca0fbeae34de2b8735222dc7a37",
+      "bytes": 1075
+    }
+  ],
+  "pins": {
+    "pinyin": "9d05c9e29cb6a7e5c79f2f5279f5c1014246a19a",
+    "jieba": "67fa2e36e72f69d9134b8a1037b83fbb070b9775"
+  },
+  "transformation": "5000 CJK characters selected by summed jieba word frequencies; candidates prioritize first-listed pinyin reading then frequency; reverse readings, strip tones, use v for umlaut u; no phrase prediction",
+  "repositories": [
+    "https://github.com/mozillazg/pinyin-data",
+    "https://github.com/fxsjy/jieba"
+  ],
+  "licenses": "MIT, full notices alongside"
+}

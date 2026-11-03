@@ -1,0 +1,10 @@
+# EyeStarlink application source selection. MIT, 2026 MZ.
+set(eye_dir ${CMAKE_CURRENT_SOURCE_DIR}/eye_link_a_control)
+set(eye_sources)
+foreach(unit eye_main eye_radio eye_endpoint eye_fanout)
+  list(APPEND eye_sources ${eye_dir}/firmware/${unit}.c)
+endforeach()
+list(APPEND eye_sources ${eye_dir}/protocol/eye_event.c)
+set(eye_headers ${eye_dir}/firmware ${eye_dir}/protocol)
+set(SOURCES ${SOURCES} ${eye_sources} PARENT_SCOPE)
+set(PUBLIC_HEADER ${PUBLIC_HEADER} ${eye_headers} PARENT_SCOPE)

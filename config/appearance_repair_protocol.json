@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-25",
+  "software_tests": 213,
+  "fixed_before_next_live_run": true,
+  "runtime_manifest": {
+    "expected_files": {
+      "src/eye_tracker/board.py": "993758fca94919949654db1bcce338ff0914250c5432b6b4175c4d45f887e4e8",
+      "src/eye_tracker/appearance.py": "20333f92e138caa261664a76d71e30aa07281fdf65077a8f4be5b632a67aac1b",
+      "src/eye_tracker/appearance_diagnostic.py": "ad11e52e069a25bdbedd8748798e01ef9944513ab8071b06680294175a33314c",
+      "data/private/diagnostic/model.npz": "f4d6cff76449b8909ec088db5ffc2ff6f211c5f96df70f52ed9e6421f128dce6",
+      "src/eye_tracker/invalid_input_diagnostic.py": "5e4401dbc002ce51a1db70c90add65f0a2fc33bf1cd8534a944d767f26737bad",
+      "assets/invalid_input_prompts.npz": "8872b041f244c901ff6ae805d4bd01e38608787553486a846ce47ba21347c5b3"
+    },
+    "expected_bit_sha256": "1d546b9c7b63825ce075798df87aacccfa78fe37d3d26e379fd1dec6aca59ebc",
+    "files": {
+      "src/eye_tracker/appearance.py": "a2304ed8131845bec29b8f1f4b0a7bb3b0ef0b02cde675abb05b36b25812deef",
+      "src/eye_tracker/appearance_diagnostic.py": "ecbfd4640522122d7daaa0401fdd3646a714e14ff155f311c77ef52f8fe07bc3",
+      "data/private/diagnostic/model.npz": "a6becee116e740828c9c610055d4c5f6cad5d5846c93cac9b756e67140b869d3"
+    },
+    "scope": "Training-only spatial metric. Strict fit passed, pack disabled. Same thresholds/temporal/registration and old audio FPGA.",
+    "runtime_files": {
+      "src/eye_tracker/board.py": "993758fca94919949654db1bcce338ff0914250c5432b6b4175c4d45f887e4e8",
+      "src/eye_tracker/appearance.py": "a2304ed8131845bec29b8f1f4b0a7bb3b0ef0b02cde675abb05b36b25812deef",
+      "src/eye_tracker/appearance_diagnostic.py": "ecbfd4640522122d7daaa0401fdd3646a714e14ff155f311c77ef52f8fe07bc3",
+      "data/private/diagnostic/model.npz": "a6becee116e740828c9c610055d4c5f6cad5d5846c93cac9b756e67140b869d3",
+      "src/eye_tracker/invalid_input_diagnostic.py": "5e4401dbc002ce51a1db70c90add65f0a2fc33bf1cd8534a944d767f26737bad",
+      "assets/invalid_input_prompts.npz": "8872b041f244c901ff6ae805d4bd01e38608787553486a846ce47ba21347c5b3"
+    }
+  },
+  "patch_sha256": "2db5d92de333fc103eac2a890927ae3bd6eaab525d6fc66b505bb2049b77ce93",
+  "model_pack_sha256": "a6becee116e740828c9c610055d4c5f6cad5d5846c93cac9b756e67140b869d3",
+  "plan": "Same13-step invalid-input protocol, 92seconds nominal. Four before/after directions and closed/cover/leave/blink image audit.",
+  "source_classifier_gates_unchanged": [
+    0.09,
+    0.75,
+    0.015
+  ],
+  "temporal_gate_unchanged": {
+    "frames": 5,
+    "span_s": 0.35,
+    "max_gap_s": 0.25,
+    "max_age_s": 0.15
+  },
+  "must_report": "All raw/stable wrong results, stage coverage and continuous span. Prompts not ground truth; negative periods must be inspected in images.",
+  "entry_gate": "Each before/after positive phase: >=60% matching stable, zero stable wrong and >=1s contiguous stable matching span. Zero stable accepted during image-confirmed invalid. Any failure blocks enabling actions.",
+  "actions_enabled": false,
+  "all_existing_stages_development": true,
+  "stage": "appearance_weighted_check_20261025"
+}

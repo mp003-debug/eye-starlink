@@ -1,0 +1,62 @@
+{
+  "model": "jingyaogong/MiniMind2-Small",
+  "model_revision": "8c0c0de640cd532fee03d329b95a58c56591b5bc",
+  "runtime_revision": "350e04fe35433e6d2941dce5a1f53308f87058eb",
+  "downloads": {
+    "minimind/config.json": {
+      "url": "https://huggingface.co/jingyaogong/MiniMind2-Small/resolve/8c0c0de640cd532fee03d329b95a58c56591b5bc/config.json",
+      "sha256": "3b306b25649dd3a3b16239ed3f40a8ec76671931b15c4a8f85c1ed52694066ea",
+      "bytes": 666
+    },
+    "minimind/generation_config.json": {
+      "url": "https://huggingface.co/jingyaogong/MiniMind2-Small/resolve/8c0c0de640cd532fee03d329b95a58c56591b5bc/generation_config.json",
+      "sha256": "89c1678d2e54c78b2e98842459d5bf4469a62ac0cf78b461607ffefcfd2840db",
+      "bytes": 111
+    },
+    "minimind/tokenizer.json": {
+      "url": "https://huggingface.co/jingyaogong/MiniMind2-Small/resolve/8c0c0de640cd532fee03d329b95a58c56591b5bc/tokenizer.json",
+      "sha256": "d98595c6aef70d95f72748582fb9b4f53d76dd58c1ae1dd702ad7c84e1caf5e4",
+      "bytes": 439547
+    },
+    "minimind/tokenizer_config.json": {
+      "url": "https://huggingface.co/jingyaogong/MiniMind2-Small/resolve/8c0c0de640cd532fee03d329b95a58c56591b5bc/tokenizer_config.json",
+      "sha256": "9e5a36a68712591f8c63fef9874b5c4af20b87e9ca67ba28d0b61e5cb2a133de",
+      "bytes": 1029
+    },
+    "minimind/model.safetensors": {
+      "url": "https://huggingface.co/jingyaogong/MiniMind2-Small/resolve/8c0c0de640cd532fee03d329b95a58c56591b5bc/model.safetensors",
+      "sha256": "83bfe6f127c98120a3410aab65eee3b66b8301ac352c20b7efd5e2eb688f6d85",
+      "bytes": 51667832
+    },
+    "minimind/README.md": {
+      "url": "https://huggingface.co/jingyaogong/MiniMind2-Small/resolve/8c0c0de640cd532fee03d329b95a58c56591b5bc/README.md",
+      "sha256": "6ccf2e0cf45ab440c132ab475ae6563914b324ad7bd1796cc34340b7d4410c05",
+      "bytes": 91123
+    },
+    "llama2c/runq.c": {
+      "url": "https://raw.githubusercontent.com/karpathy/llama2.c/350e04fe35433e6d2941dce5a1f53308f87058eb/runq.c",
+      "sha256": "ba9cc681afca79f994f815dfeffc4a61c5b3ca8c5d4d4dcb75c8d375856ba548",
+      "bytes": 43357
+    },
+    "llama2c/export.py": {
+      "url": "https://raw.githubusercontent.com/karpathy/llama2.c/350e04fe35433e6d2941dce5a1f53308f87058eb/export.py",
+      "sha256": "aba8d36ee881478bf59e13f63224e37a00b51a18cacbc38d0def52cc3c0cb475",
+      "bytes": 24513
+    },
+    "llama2c/LICENSE": {
+      "url": "https://raw.githubusercontent.com/karpathy/llama2.c/350e04fe35433e6d2941dce5a1f53308f87058eb/LICENSE",
+      "sha256": "e87b912002f04cdfa837eaf7f70548ab79b9cb62a285495edf575f3da875aec4",
+      "bytes": 1063
+    },
+    "llama2c/win.h": {
+      "url": "https://raw.githubusercontent.com/karpathy/llama2.c/350e04fe35433e6d2941dce5a1f53308f87058eb/win.h",
+      "sha256": "718d5c4d246a4262e7b8c6caaf7191d3e5d6d73050ec4c54a75916c00df1d833",
+      "bytes": 1612
+    },
+    "minimind/LICENSE": {
+      "url": "https://raw.githubusercontent.com/jingyaogong/minimind/master/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    }
+  }
+}

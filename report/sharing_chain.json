@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "cases": [
+    "64 characters with three receivers, LIVE model",
+    "64 characters with three receivers, TEST no display",
+    "1 characters finish once during prolonged unknown gaze after explicit confirmation",
+    "64 characters finish once during prolonged unknown gaze after explicit confirmation",
+    "missing third receiver ACK cannot commit or report success",
+    "real v1 help preempts an unfinished v2 message through bridge",
+    "ordinary message cannot replace pending care"
+  ],
+  "hardware_tested": false
+}

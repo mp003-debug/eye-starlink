@@ -1,0 +1,128 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Oct 29 16:26:34 2026
+| Host         : LAPTOP-DPSVKCTF running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -file <project>/build/fpga/reports/bus_skew.rpt
+| Design       : eye_tracker_bd_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   28        [get_cells -hier -regexp {.*camera_mailbox_reg\[[0-9]+\]}]
+                                              [get_cells -hier -regexp {.*snapshot_reg\[[0-9]+\]}]
+                                                                              Slow             20.000       1.537     18.463
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells -hier -regexp {.*camera_mailbox_reg\[[0-9]+\]}] -to [get_cells -hier -regexp {.*snapshot_reg\[[0-9]+\]}] 20.000
+Requirement: 20.000ns
+Endpoints: 224
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+cam_pclk_clk          clk_fpga_0            eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[150]/D
+                                                                            eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[114]/D
+                                                                                                            Slow         1.537     18.463
+
+
+Slack (MET) :             18.463ns  (requirement - actual skew)
+  Endpoint Source:        eye_tracker_bd_i/camera_diag_0/inst/camera_mailbox_reg[150]/C
+                            (rising edge-triggered cell FDRE clocked by cam_pclk_clk)
+  Endpoint Destination:   eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[150]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       eye_tracker_bd_i/camera_diag_0/inst/camera_mailbox_reg[114]/C
+                            (rising edge-triggered cell FDRE clocked by cam_pclk_clk)
+  Reference Destination:  eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[114]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            20.000ns
+  Endpoint Relative Delay:    4.436ns
+  Reference Relative Delay:   2.476ns
+  Relative CRPR:              0.423ns
+  Actual Bus Skew:            1.537ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  cam_pclk
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         1.498     1.498 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.703    eye_tracker_bd_i/video_0/inst/cam_pclk
+    BUFGCTRL_X0Y18       BUFG (Prop_bufg_I_O)         0.101     3.804 r  eye_tracker_bd_i/video_0/inst/u_cam_clock/O
+                         net (fo=976, routed)         1.638     5.442    eye_tracker_bd_i/camera_diag_0/inst/pclk
+    SLICE_X46Y79         FDRE                                         r  eye_tracker_bd_i/camera_diag_0/inst/camera_mailbox_reg[150]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X46Y79         FDRE (Prop_fdre_C_Q)         0.478     5.920 r  eye_tracker_bd_i/camera_diag_0/inst/camera_mailbox_reg[150]/Q
+                         net (fo=1, routed)           0.908     6.829    eye_tracker_bd_i/camera_diag_0/inst/camera_mailbox[150]
+    SLICE_X47Y78         FDRE                                         r  eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[150]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  eye_tracker_bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088     1.088    eye_tracker_bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     1.179 r  eye_tracker_bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1994, routed)        1.466     2.645    eye_tracker_bd_i/camera_diag_0/inst/aclk
+    SLICE_X47Y78         FDRE                                         r  eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[150]/C
+                         clock pessimism              0.000     2.645    <hidden>
+    SLICE_X47Y78         FDRE (Setup_fdre_C_D)       -0.252     2.393    eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[150]
+  -------------------------------------------------------------------
+                         data arrival                           6.829    <hidden>
+                         clock arrival                          2.393    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                         4.436    <hidden>
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  <hidden>
+    U18                                               0.000     0.000 r  cam_pclk
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    U18                  IBUF (Prop_ibuf_I_O)         1.428     1.428 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.434    eye_tracker_bd_i/video_0/inst/cam_pclk
+    BUFGCTRL_X0Y18       BUFG (Prop_bufg_I_O)         0.091     3.525 r  eye_tracker_bd_i/video_0/inst/u_cam_clock/O
+                         net (fo=976, routed)         1.455     4.979    eye_tracker_bd_i/camera_diag_0/inst/pclk
+    SLICE_X53Y79         FDRE                                         r  eye_tracker_bd_i/camera_diag_0/inst/camera_mailbox_reg[114]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y79         FDRE (Prop_fdre_C_Q)         0.367     5.346 r  eye_tracker_bd_i/camera_diag_0/inst/camera_mailbox_reg[114]/Q
+                         net (fo=1, routed)           0.365     5.711    eye_tracker_bd_i/camera_diag_0/inst/camera_mailbox[114]
+    SLICE_X54Y79         FDRE                                         r  eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[114]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  <hidden>
+    PS7_X0Y0             PS7                          0.000     0.000 r  eye_tracker_bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    eye_tracker_bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  eye_tracker_bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1994, routed)        1.698     2.992    eye_tracker_bd_i/camera_diag_0/inst/aclk
+    SLICE_X54Y79         FDRE                                         r  eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[114]/C
+                         clock pessimism              0.000     2.992    <hidden>
+    SLICE_X54Y79         FDRE (Hold_fdre_C_D)         0.243     3.235    eye_tracker_bd_i/camera_diag_0/inst/snapshot_reg[114]
+  -------------------------------------------------------------------
+                         data arrival                           5.711    <hidden>
+                         clock arrival                          3.235    <hidden>
+  -------------------------------------------------------------------
+                         relative delay                         2.476    <hidden>
+
+
+

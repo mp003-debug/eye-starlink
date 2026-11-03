@@ -1,0 +1,9 @@
+{
+  "tests": 559,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 3,
+  "passed": true,
+  "scope": "synthetic calibration/interaction, compiled RGB565 UI, untimed games, chapter audio/bookmarks/help priority, local video state/clock/priority/bounds, album/grouped pinyin/favorites, six emotion cards, usage guidance, music and quick phrases, bounded streaming/priority/navigation/import boundaries, camera-loop wiring, appearance rejection/check leakage, bounded recording, simulated DMA/codec/helper/UART failures, artifact contract and explicit-profile startup checks; no board, actual listening or real-eye accuracy",
+  "board_tested": false
+}

@@ -1,0 +1,44 @@
+{
+  "stage": "appearance_corner_check_20261025",
+  "frozen_before_live": true,
+  "tests": 238,
+  "patch_sha256": "3348378f12e740753a7a4610ed6768fff09d001f4078226e64fd89eb9fc91b8d",
+  "runtime_manifest": {
+    "expected_files": {
+      "src/eye_tracker/render.py": "da317d5e8be2d0d84f82aa1d4fce0bb55efa21f3ef30339154df9a8aa832eaf7",
+      "assets/communication_ui.npz": "83cc4981cec583d87c5630223ab1e6aecf7cc7e7706753e7e4401968d52c10f0",
+      "src/eye_tracker/board.py": "fe6e86080824ba1a1d11272451d37a3c945a233e463bf87018aa372ea005b7df",
+      "src/eye_tracker/appearance.py": "a2304ed8131845bec29b8f1f4b0a7bb3b0ef0b02cde675abb05b36b25812deef",
+      "src/eye_tracker/appearance_diagnostic.py": "191c2553895035ef7c478c14bede9e4eb0535d1869ba9de72e48d3df530b468e",
+      "data/private/diagnostic/model.npz": "a6becee116e740828c9c610055d4c5f6cad5d5846c93cac9b756e67140b869d3",
+      "src/eye_tracker/invalid_input_diagnostic.py": "5e4401dbc002ce51a1db70c90add65f0a2fc33bf1cd8534a944d767f26737bad",
+      "assets/invalid_input_prompts.npz": "8872b041f244c901ff6ae805d4bd01e38608787553486a846ce47ba21347c5b3",
+      "src/eye_tracker/appearance_trial.py": "7766dc2a5be59ba6e5669cd8753fa8ca2c0b562c3132318bf64abd6f4275a409"
+    },
+    "files": {
+      "src/eye_tracker/board.py": "9f9c0fb2d0cb4c8d71a664261e656e94bd55158aeba5647ee1b6edd0beaeaff4",
+      "src/eye_tracker/appearance_diagnostic.py": "8512928ec51f1c2e3ccb7fad49ae261afc0727108ad59a7341376774d718ddb0",
+      "src/eye_tracker/appearance_trial.py": "b3b2ee68022b9c1c7314da52200898d05dfaacf910edfbec1ed98bc2b60e245e"
+    },
+    "runtime_files": {
+      "src/eye_tracker/render.py": "da317d5e8be2d0d84f82aa1d4fce0bb55efa21f3ef30339154df9a8aa832eaf7",
+      "assets/communication_ui.npz": "83cc4981cec583d87c5630223ab1e6aecf7cc7e7706753e7e4401968d52c10f0",
+      "src/eye_tracker/board.py": "9f9c0fb2d0cb4c8d71a664261e656e94bd55158aeba5647ee1b6edd0beaeaff4",
+      "src/eye_tracker/appearance.py": "a2304ed8131845bec29b8f1f4b0a7bb3b0ef0b02cde675abb05b36b25812deef",
+      "src/eye_tracker/appearance_diagnostic.py": "8512928ec51f1c2e3ccb7fad49ae261afc0727108ad59a7341376774d718ddb0",
+      "data/private/diagnostic/model.npz": "a6becee116e740828c9c610055d4c5f6cad5d5846c93cac9b756e67140b869d3",
+      "src/eye_tracker/invalid_input_diagnostic.py": "5e4401dbc002ce51a1db70c90add65f0a2fc33bf1cd8534a944d767f26737bad",
+      "assets/invalid_input_prompts.npz": "8872b041f244c901ff6ae805d4bd01e38608787553486a846ce47ba21347c5b3",
+      "src/eye_tracker/appearance_trial.py": "b3b2ee68022b9c1c7314da52200898d05dfaacf910edfbec1ed98bc2b60e245e"
+    },
+    "expected_bit_sha256": "1d546b9c7b63825ce075798df87aacccfa78fe37d3d26e379fd1dec6aca59ebc",
+    "new_files": [],
+    "scope": "Bounded strong corner-boundary peak retry; diagnostic can use explicit verified position seed only. Older positive evidence cannot authorize new runtime eye-trial."
+  },
+  "model_pack_sha256": "a6becee116e740828c9c610055d4c5f6cad5d5846c93cac9b756e67140b869d3",
+  "plan": "Existing CHECK_TARGETS: center reference, rest/help/center/more/water;6s each+intro (~43s). Explicit previous verified position seed, five new references. LampOFF.",
+  "seed_evidence": "data/private/bringup/appearance_edge_check_20261025",
+  "entry_gate": "Every scored target >=60% stable matching, zero raw/stable wrong, longest stable >=1s. No actions/audio/UART.",
+  "actions_enabled": false,
+  "changes": "Single8px boundary halo on strong corner match only; startup seed is position not classification acceptance; original thresholds remain."
+}

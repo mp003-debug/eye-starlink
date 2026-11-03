@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "photos": [
+    {
+      "id": "mountains",
+      "title": "山间远眺",
+      "file": "mountains.rgb565",
+      "sha256": "08629f929decad63aec89af038b35ab921b445d396f83ca25de6ae6ee9ce3ca4",
+      "credit": {
+        "author": "Hannes Röst",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Fronalpstock_big.jpg",
+        "changes": "Resized to fit with letterboxing; RGB565 conversion; metadata removed. Mountain derivative retains CC BY-SA 3.0."
+      }
+    },
+    {
+      "id": "lake",
+      "title": "湖畔雪山",
+      "file": "lake.rgb565",
+      "sha256": "a35265afc7b62d3548adde14074ebb8f96451e96034979b829de2857d8e1e11b",
+      "credit": {
+        "author": "Paul Stewart",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Lake_Mapourika1.jpg",
+        "changes": "Resized to fit with letterboxing; RGB565 conversion; metadata removed. Mountain derivative retains CC BY-SA 3.0."
+      }
+    },
+    {
+      "id": "forest",
+      "title": "林间阳光",
+      "file": "forest.rgb565",
+      "sha256": "365b5b59724dd1551635d695ac374c274f517ef887c8765b3d19158d4a6a932b",
+      "credit": {
+        "author": "SpessiG",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Landscape_of_a_wild_forest.jpg",
+        "changes": "Resized to fit with letterboxing; RGB565 conversion; metadata removed. Mountain derivative retains CC BY-SA 3.0."
+      }
+    }
+  ]
+}

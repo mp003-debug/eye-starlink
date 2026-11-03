@@ -1,0 +1,16 @@
+{
+  "stage": "appearance_current_fit_check_20261025",
+  "frozen_before_live": true,
+  "software_tests": 244,
+  "patch_sha256": "443d6e236dbcf19c58af2ac44ee85d42df203fc1abc4acdffdd20b42f6ecaf37",
+  "model_pack_sha256": "9b86d3736e09d710c1f1cffcacd983f367bc0e094e7193e8ca24995b894ad10f",
+  "fit_stage": "data/private/bringup/appearance_eye_support_check_20261025",
+  "fit_count": 25,
+  "first5_center_reference_excluded": true,
+  "plan": "Existing center setup then rest/help/center/more/water about43s. New independent native images; no actions/audio/UART; lampOFF.",
+  "seed_evidence": "data/private/bringup/appearance_corner_check_20261025",
+  "seed_original_pack": "data/private/diagnostic/previous_model.npz",
+  "entry_gate": "Each scored target at least60percent stable matching, zero raw/stable wrong, longest stable at least1s. No manual threshold changes.",
+  "validation_passed": false,
+  "actions_enabled": false
+}

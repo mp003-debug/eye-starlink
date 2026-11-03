@@ -1,0 +1,52 @@
+{
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "-8%",
+  "pitch": "-4Hz",
+  "synthetic_voice": true,
+  "service": "Microsoft Edge online TTS via edge-tts",
+  "source": "https://github.com/rany2/edge-tts",
+  "lines": [
+    {
+      "start": 1.0,
+      "text": "想象，从一枚芯片开始。",
+      "file": "voice_01.mp3",
+      "sha256": "758610ed098d40b38f530e7755b3b3e6ff8af111c6851bbd6fe1cc4e357a795e"
+    },
+    {
+      "start": 6.2,
+      "text": "每一次思考，都在寻找，更进一步的可能。",
+      "file": "voice_02.mp3",
+      "sha256": "67701d32441ce9d5a69ac82591d128ba9d7867234b64b374d91663edff99efe0"
+    },
+    {
+      "start": 12.8,
+      "text": "AMD 锐龙。让计算的力量，走进游戏与创作。",
+      "file": "voice_03.mp3",
+      "sha256": "8caae65c5c193c8b5adf552fac2527740f26b2d86f8d39ac10dde28f6afe862d"
+    },
+    {
+      "start": 20.2,
+      "text": "在虚拟世界里，探索新的边界。",
+      "file": "voice_04.mp3",
+      "sha256": "449e9e052ed57d9e05931b79719ff93c418a45c565b0bd4dabab09f9e66ce4d8"
+    },
+    {
+      "start": 26.3,
+      "text": "在灵感涌现时，把想法变成作品。",
+      "file": "voice_05.mp3",
+      "sha256": "ee572762c85f995c25229669c322d5152260af3c91225ebf83201e789614d0b0"
+    },
+    {
+      "start": 33.0,
+      "text": "从专注当下，到创造下一刻。",
+      "file": "voice_06.mp3",
+      "sha256": "91c1048f114899e1e1275e0750a810e967f95be2c0b759db04224132db2cb87a"
+    },
+    {
+      "start": 38.8,
+      "text": "AMD 锐龙。让灵感，持续向前。",
+      "file": "voice_07.mp3",
+      "sha256": "879193115338262e8ce5fba3024b200efb09dc9fdb96a47e0104af7f46094103"
+    }
+  ]
+}

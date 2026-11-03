@@ -1,0 +1,11 @@
+Configuration: MM2S RGB565/16-bit, S2MM GRAY8/8-bit, linebuffer_depth=8192 each; MM2S=4 and S2MM=2 dedicated FIFO36E1 primitives.
+Reviewed CDC-13 findings: 6, entirely inside VDMA dedicated FIFO36E1 primitives.
+Custom RTL critical CDC: 0. Raw report preserved (still reports 6 Critical).
+eye_tracker_bd_i/vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gchain.gp1[1].gbldc.inst_prim/gf36e1_inst.sngfifo36e1 EN_SYN=0 DO_REG=1
+eye_tracker_bd_i/vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gchain.gp1[2].gbldl.inst_prim/gf36e1_inst.sngfifo36e1 EN_SYN=0 DO_REG=1
+eye_tracker_bd_i/vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[2].gnll_fifo.inst_extd/gchain.gp1[1].gbldc.inst_prim/gf36e1_inst.sngfifo36e1 EN_SYN=0 DO_REG=1
+eye_tracker_bd_i/vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[2].gnll_fifo.inst_extd/gchain.gp1[2].gbldl.inst_prim/gf36e1_inst.sngfifo36e1 EN_SYN=0 DO_REG=1
+eye_tracker_bd_i/vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gchain.gp1[1].gbldc.inst_prim/gf36e1_inst.sngfifo36e1 EN_SYN=0 DO_REG=1
+eye_tracker_bd_i/vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_NO_FSYNC_LOGIC.GEN_LINEBUFFER.GEN_ASYNC_FIFO.LB_BUILT_IN.I_LINEBUFFER_FIFO/fg_builtin_fifo_inst/inst_fifo_gen/gconvfifo.rf/gbi.bi/v7_bi_fifo.fblk/gextw[1].gnll_fifo.inst_extd/gchain.gp1[2].gbldl.inst_prim/gf36e1_inst.sngfifo36e1 EN_SYN=0 DO_REG=1
+CDC-6 VSIZE: AMD VDMA internal synchronizer; software changes geometry only while stopped.
+CDC-15 diagnostic mailbox: held until next request, 2FF ACK + settle cycle, bounded delay/skew.

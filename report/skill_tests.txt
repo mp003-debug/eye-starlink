@@ -1,0 +1,31 @@
+test_matching_contract (test_helpers.ContractTests.test_matching_contract) ... ok
+test_metadata_snapshot_does_not_read_registers (test_helpers.ContractTests.test_metadata_snapshot_does_not_read_registers) ... ok
+test_missing_ip (test_helpers.ContractTests.test_missing_ip) ... ok
+test_overlap_and_out_of_range_register (test_helpers.ContractTests.test_overlap_and_out_of_range_register) ... ok
+test_pair_hash_and_missing_directory (test_helpers.ContractTests.test_pair_hash_and_missing_directory) ... ok
+test_path_escape_and_basename_mismatch (test_helpers.ContractTests.test_path_escape_and_basename_mismatch) ... ok
+test_relocated_second_platform (test_helpers.ContractTests.test_relocated_second_platform) ... ok
+test_wrong_clock (test_helpers.ContractTests.test_wrong_clock) ... ok
+test_wrong_register (test_helpers.ContractTests.test_wrong_register) ... ok
+test_wrong_vlnv (test_helpers.ContractTests.test_wrong_vlnv) ... ok
+test_bounds_and_alignment (test_helpers.DmaTests.test_bounds_and_alignment) ... ok
+test_error_and_successful_recovery (test_helpers.DmaTests.test_error_and_successful_recovery) ... ok
+test_first_transfer_after_start (test_helpers.DmaTests.test_first_transfer_after_start) ... ok
+test_inactive_channel_rejected (test_helpers.DmaTests.test_inactive_channel_rejected) ... ok
+test_overlapping_buffers (test_helpers.DmaTests.test_overlapping_buffers) ... ok
+test_partial_start_failure_keeps_buffers (test_helpers.DmaTests.test_partial_start_failure_keeps_buffers) ... ok
+test_recovery_failure_preserved (test_helpers.DmaTests.test_recovery_failure_preserved) ... ok
+test_success_cache_and_order (test_helpers.DmaTests.test_success_cache_and_order) ... ok
+test_timeout_keeps_buffer_ownership (test_helpers.DmaTests.test_timeout_keeps_buffer_ownership) ... ok
+test_exact_integer (test_helpers.GoldenTests.test_exact_integer) ... ok
+test_independent_numeric_failure_is_not_hidden (test_helpers.GoldenTests.test_independent_numeric_failure_is_not_hidden) ... ok
+test_large_integer_not_rounded (test_helpers.GoldenTests.test_large_integer_not_rounded) ... ok
+test_negative_tolerance (test_helpers.GoldenTests.test_negative_tolerance) ... ok
+test_shape_empty_nan_and_ragged_rejected (test_helpers.GoldenTests.test_shape_empty_nan_and_ragged_rejected) ... ok
+test_timing_and_resources (test_helpers.GoldenTests.test_timing_and_resources) ... ok
+test_tolerance_and_p95 (test_helpers.GoldenTests.test_tolerance_and_p95) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.036s
+
+OK

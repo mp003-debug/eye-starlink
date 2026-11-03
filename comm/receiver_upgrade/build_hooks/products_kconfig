@@ -1,0 +1,8 @@
+config SAMPLE_SUPPORT_SLE_UART
+    bool "Integrated eye SLE application"
+    depends on ENABLE_PRODUCTS_SAMPLE
+    default n
+
+if SAMPLE_SUPPORT_SLE_UART
+osource "application/samples/products/sle_uart/Kconfig"
+endif

@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-25",
+  "source_sha256": "a2304ed8131845bec29b8f1f4b0a7bb3b0ef0b02cde675abb05b36b25812deef",
+  "source": "src/eye_tracker/appearance.py",
+  "setup": "ordinary indoor light, single user, fixed focus and camera, limited head movement; no human NIR",
+  "fit_visits": [
+    "fit_a",
+    "fit_b"
+  ],
+  "check_visits": [
+    "check"
+  ],
+  "targets": [
+    "center",
+    "water",
+    "rest",
+    "help",
+    "more"
+  ],
+  "positive_check_required": "at least5 per target, at least60% correct accepted and zero wrong accepted for every target",
+  "invalid_input_required": "separate at least5 invalid examples with zero accepted; still required before enabling",
+  "thresholds": {
+    "distance": 0.09,
+    "ratio": 0.75,
+    "margin": 0.015
+  },
+  "scope": "prototype screen-region classification, no continuous gaze coordinates, no general accuracy claim",
+  "old_data": "Oct24 fixation already used in development; not fresh acceptance",
+  "readiness_gate_only": "60% coverage is a prototype diagnostic entry gate, not a replacement for final38/40 and stability goals; invalid examples mandatory, wrong accepted examples fail",
+  "evaluation_script_sha256": "f23ce1ca3c12753ed777e1f8de222afabcd020d4a40d0416cf56b7723b317f05",
+  "setup_reference_policy": "first recorded center fit frame, full-frame eye proposal; verify crop visually; no check-frame-based setup choice",
+  "frozen_before_new_data_download": false,
+  "original_evaluator_sha256": "533e140f2aacd47dac210a9b9c2305642b177bcb9ea793e67da3c5172e97c510",
+  "setup_override": {
+    "reason": "Original frozen automatic first-frame detector returned no candidates; raw first fit image has a complete open eye. Helper-marked one eye on this fit image only, before opening any held-out check image or check scores. No classifier/threshold change. Original end-to-end automatic pipeline failed setup.",
+    "seed_box": [
+      138,
+      76,
+      362,
+      300
+    ],
+    "reference_sha256": "f243d8c590f63dfa264e1bf2889562bc433f2359e3e342b4aea8cc0ab6ea294c",
+    "check_images_inspected_before_amendment": false
+  },
+  "prior_attempt": {
+    "source_sha256": "1a42e550da934b3f68325ca6f28a59e6dd9fe332a810e3d97794e5db257ee149",
+    "outcome": "original automatic setup failed; helper setup aligned11/75 and lacked training coverage; original model never enabled",
+    "result": "data/private/analysis/appearance_calibration_20261025/initial_evaluation.json"
+  },
+  "development_data": "All existing captures through appearance_weighted_check_20261025 informed development. New data required after corner-search edge fix.",
+  "alignment_change": "Local spatially balanced anchors, coarse translation initializer and bounded affine. Existing consistency and classifier gates retained. Training cross-class mistakes explicitly block fitting.",
+  "requires_new_capture_for_acceptance": true,
+  "protocol_status": "development only; current calibration not usable; new independent data required",
+  "development_manifest_sha256": [
+    "5ebc0494abc491d5ff0809d6c98d5367924f8b5bd091da036f09bb5adf3bc134",
+    "a585c6783425a455b146af17813d81f0f6ceb1c2b2b2ab6f061e75145622d2f1",
+    "b2608f42276bff23afc63d2830f6bb7b5c520009d8fffde50beddec9f540e7bb",
+    "8e02098dc43ab01badf8e7eeaf15989427996051713c40dd49d0fafbf9449ece",
+    "8f6aae45d4d3f826f4bc2eb283602af9c354e07e5cc84590ba427ff635124755",
+    "b047104dba0e0aa317516705672f90fdf86342b55982a893770446b63ef5a455",
+    "1b39f7b95779c40105463eaeb59dea72c1ef8e6f581f8fb16e2c11ce70b0c03b"
+  ]
+}

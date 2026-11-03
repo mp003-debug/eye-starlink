@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "tracks": [
+    {
+      "id": "brahms_waltz_15",
+      "title": "勃拉姆斯《降A大调圆舞曲》Op.39 No.15",
+      "file": "brahms_waltz_15.wav",
+      "sha256": "7ec6e6eb6119748b0c4a3fbdc922105667accd0406aa19f53936ee5c587433a9"
+    },
+    {
+      "id": "liszt_consolation_3",
+      "title": "李斯特《安慰曲》第3首",
+      "file": "liszt_consolation_3.wav",
+      "sha256": "d0462d3e538113177cbc8cb1b806fd518f2d44f6e31a6160928be35b63886dea"
+    },
+    {
+      "id": "schubert_impromptu_d899_3",
+      "title": "舒伯特《降G大调即兴曲》D.899 No.3",
+      "file": "schubert_impromptu_d899_3.wav",
+      "sha256": "55637f4029ce455824c6684920bcece4f2c6939b659b38a78bbb317975d0e4f5"
+    }
+  ]
+}

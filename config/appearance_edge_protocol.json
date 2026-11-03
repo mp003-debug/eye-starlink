@@ -1,0 +1,39 @@
+{
+  "stage": "appearance_edge_check_20261025",
+  "frozen_before_live": true,
+  "tests": 218,
+  "patch_sha256": "d2d7d4c9aea9aae2066e03b38cbebaa9551de6babf157f92773cfc966404ed95",
+  "runtime_manifest": {
+    "expected_files": {
+      "src/eye_tracker/board.py": "993758fca94919949654db1bcce338ff0914250c5432b6b4175c4d45f887e4e8",
+      "src/eye_tracker/appearance.py": "a2304ed8131845bec29b8f1f4b0a7bb3b0ef0b02cde675abb05b36b25812deef",
+      "src/eye_tracker/appearance_diagnostic.py": "ecbfd4640522122d7daaa0401fdd3646a714e14ff155f311c77ef52f8fe07bc3",
+      "data/private/diagnostic/model.npz": "a6becee116e740828c9c610055d4c5f6cad5d5846c93cac9b756e67140b869d3",
+      "src/eye_tracker/invalid_input_diagnostic.py": "5e4401dbc002ce51a1db70c90add65f0a2fc33bf1cd8534a944d767f26737bad",
+      "assets/invalid_input_prompts.npz": "8872b041f244c901ff6ae805d4bd01e38608787553486a846ce47ba21347c5b3"
+    },
+    "expected_bit_sha256": "1d546b9c7b63825ce075798df87aacccfa78fe37d3d26e379fd1dec6aca59ebc",
+    "files": {
+      "src/eye_tracker/appearance_diagnostic.py": "191c2553895035ef7c478c14bede9e4eb0535d1869ba9de72e48d3df530b468e"
+    },
+    "runtime_files": {
+      "src/eye_tracker/board.py": "993758fca94919949654db1bcce338ff0914250c5432b6b4175c4d45f887e4e8",
+      "src/eye_tracker/appearance.py": "a2304ed8131845bec29b8f1f4b0a7bb3b0ef0b02cde675abb05b36b25812deef",
+      "src/eye_tracker/appearance_diagnostic.py": "191c2553895035ef7c478c14bede9e4eb0535d1869ba9de72e48d3df530b468e",
+      "data/private/diagnostic/model.npz": "a6becee116e740828c9c610055d4c5f6cad5d5846c93cac9b756e67140b869d3",
+      "src/eye_tracker/invalid_input_diagnostic.py": "5e4401dbc002ce51a1db70c90add65f0a2fc33bf1cd8534a944d767f26737bad",
+      "assets/invalid_input_prompts.npz": "8872b041f244c901ff6ae805d4bd01e38608787553486a846ce47ba21347c5b3"
+    },
+    "scope": "Clip only unused corner search margins; use final refined crop visibility. No padding, model or threshold change; all actions disabled."
+  },
+  "model_pack_sha256": "a6becee116e740828c9c610055d4c5f6cad5d5846c93cac9b756e67140b869d3",
+  "plan": "Existing CHECK_TARGETS: center reference, rest/help/center/more/water; 6s each + intro. About43s. Ordinary indoor light; lamp off.",
+  "gates_unchanged": {
+    "distance": 0.09,
+    "ratio": 0.75,
+    "margin": 0.015
+  },
+  "entry_gate": "For every scored target >=60% matching stable, zero raw/stable wrong, and >=1s continuous matching stable. This short diagnostic alone does not validate blink protection or enable actions.",
+  "scope": "Fresh positive and continuity diagnostic after edge search repair. No forced motion or repeat full challenge, no actions/audio/UART.",
+  "actions_enabled": false
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scenarios": [
+    "share host passed: v1/v2, capability, bounded atomic commit, dedup, TEST, priority, expiry and three-peer ACK",
+    "HMI host scenarios passed: pages, local ACK/DONE, help priority, navigation, UART parsing, TEST isolation, dedup, BUSY retry",
+    "EPD host scenarios passed: page mapping, repeated requests, help priority, clear, debounce, navigation, seven RLE frames",
+    "EPD host scenarios passed: page mapping, repeated requests, help priority, clear, debounce, navigation, seven RLE frames",
+    "Sharing display host passed: 64 characters, quoting, read/clear, care priority, no resurrection, stale activity and native frame output"
+  ],
+  "hardware_tested": false
+}

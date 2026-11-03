@@ -1,0 +1,8 @@
+{
+  "source": "https://github.com/opencv/opencv/blob/4.10.0/data/haarcascades/haarcascade_eye.xml",
+  "distribution": "opencv-python-headless==4.10.0.84",
+  "sha256": "71cc64fc305a355dc60067880f6fbbd43dd155bd63ee3844661a1bda34b2fd8c",
+  "license": "Intel License Agreement retained in original XML header",
+  "scope": "Eye-region proposals only. Not a pupil/glint detector or calibrated gaze model.",
+  "local_tool_dependency": "tools/deps/opencv; excluded from runtime package; PYNQ uses installed cv2"
+}

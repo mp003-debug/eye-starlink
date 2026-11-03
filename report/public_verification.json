@@ -1,0 +1,33 @@
+{
+  "account": "mp003-debug",
+  "repository": "eye-starlink",
+  "staged_files": 486,
+  "uncompressed_bytes": 92704159,
+  "parsed_python_files": 198,
+  "software": {
+    "tests": 559,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 3,
+    "passed": true,
+    "scope": "synthetic calibration/interaction, compiled RGB565 UI, untimed games, chapter audio/bookmarks/help priority, local video state/clock/priority/bounds, album/grouped pinyin/favorites, six emotion cards, usage guidance, music and quick phrases, bounded streaming/priority/navigation/import boundaries, camera-loop wiring, appearance rejection/check leakage, bounded recording, simulated DMA/codec/helper/UART failures, artifact contract and explicit-profile startup checks; no board, actual listening or real-eye accuracy",
+    "board_tested": false
+  },
+  "skill": {
+    "tests": 26,
+    "passed": true,
+    "validation": "skill-creator quick_validate passed"
+  },
+  "native_builds": [
+    "native_eye",
+    "tiny_runtime"
+  ],
+  "receiver_host_groups": 5,
+  "python_c_chain_cases": 7,
+  "hardware_accessed": false,
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0"
+  }
+}

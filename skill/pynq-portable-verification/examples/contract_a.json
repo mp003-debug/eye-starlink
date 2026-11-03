@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "platform": "example-zynq-7000",
+  "ips": {
+    "stream_dma": {
+      "vlnv": "xilinx.com:ip:axi_dma:7.1",
+      "base": "0x40400000",
+      "range": 65536,
+      "registers": {
+        "mm2s_control": 0,
+        "mm2s_status": 4,
+        "s2mm_control": 48,
+        "s2mm_status": 52
+      }
+    }
+  },
+  "clocks_hz": {
+    "pl0": 100000000
+  }
+}

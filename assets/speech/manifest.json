@@ -1,0 +1,79 @@
+{
+  "source": "Public offline regression fixtures; synthetic tones only",
+  "runtime_requires_tts_or_network": false,
+  "format": "PCM16 mono 16000Hz",
+  "phrases": {
+    "water": {
+      "text": "我想喝水",
+      "file": "water.wav",
+      "samples": 29680,
+      "sha256": "dffe2e70de82b75c1e834e7daef48f79cd657c79c32b817c4dd52cebce2a8993",
+      "peak_abs_pcm": 6000,
+      "source": "SYNTHETIC TEST TONE; not a spoken care message"
+    },
+    "rest": {
+      "text": "我想休息",
+      "file": "rest.wav",
+      "samples": 28320,
+      "sha256": "4211133fc6b4e6808f938d0457cc876f77b0f6b3164ba86617845bc11e32f146",
+      "peak_abs_pcm": 6000,
+      "source": "SYNTHETIC TEST TONE; not a spoken care message"
+    },
+    "help": {
+      "text": "请来帮助我",
+      "file": "help.wav",
+      "samples": 31120,
+      "sha256": "26788604e8db1a69c89771978e491a1bcaf2c9c3a052714022ca4f71ef4f4aae",
+      "peak_abs_pcm": 6000,
+      "source": "SYNTHETIC TEST TONE; not a spoken care message"
+    },
+    "yes": {
+      "text": "是",
+      "file": "yes.wav",
+      "samples": 19040,
+      "sha256": "f97d5b250f1827f26607f6e35ec437622a9dcf45912d49096ecbd70a34e70307",
+      "peak_abs_pcm": 6000,
+      "source": "SYNTHETIC TEST TONE; not a spoken care message"
+    },
+    "no": {
+      "text": "不是",
+      "file": "no.wav",
+      "samples": 21600,
+      "sha256": "4d6b45a83a95dd693d518d707e446581beb94435a4305e296a2796830c4df97f",
+      "peak_abs_pcm": 6000,
+      "source": "SYNTHETIC TEST TONE; not a spoken care message"
+    },
+    "please_stop": {
+      "text": "请停一下",
+      "file": "please_stop.wav",
+      "samples": 28800,
+      "sha256": "2a23cf6905187b72c1a5b19c717693fc62e6eaa0a6146576eca0b43e33f5409c",
+      "peak_abs_pcm": 6000,
+      "source": "SYNTHETIC TEST TONE; not a spoken care message"
+    },
+    "reposition": {
+      "text": "请帮我换个姿势",
+      "file": "reposition.wav",
+      "samples": 39760,
+      "sha256": "d61e3f0b90106db5a38d821ead0d78f56927f767c2889dba036d5e1396e0db46",
+      "peak_abs_pcm": 6000,
+      "source": "SYNTHETIC TEST TONE; not a spoken care message"
+    },
+    "toilet": {
+      "text": "我要上厕所",
+      "file": "toilet.wav",
+      "samples": 33600,
+      "sha256": "70280a0a2cefc7a8641c1fbb54c0f4578cd6c0a94435ea53f882fbe23c982576",
+      "peak_abs_pcm": 6000,
+      "source": "SYNTHETIC TEST TONE; not a spoken care message"
+    },
+    "unwell": {
+      "text": "我不舒服",
+      "file": "unwell.wav",
+      "samples": 26720,
+      "sha256": "edcc12c5f02d406864143badd5b37e4dae8c8077fb59435edb34dde5fca387cd",
+      "peak_abs_pcm": 6000,
+      "source": "SYNTHETIC TEST TONE; not a spoken care message"
+    }
+  }
+}

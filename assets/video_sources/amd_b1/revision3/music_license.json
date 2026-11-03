@@ -1,0 +1,17 @@
+{
+  "title": "Titan",
+  "artist": "Scott Buckley",
+  "source_page": "https://www.scottbuckley.com.au/library/titan/",
+  "download_url": "https://www.scottbuckley.com.au/library/wp-content/uploads/2018/06/sb_titan.mp3",
+  "license": "Creative Commons Attribution 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "author_usage_page": "https://www.scottbuckley.com.au/library/using-this-music/",
+  "attribution": "'Titan' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au",
+  "changes": "45-second excerpt from 124.5 to 169.5 seconds, fades, EQ, narration ducking, level adjustment and synchronization to B1 concept video; board edition downmixed to mono/16kHz.",
+  "excerpt_start_seconds": 124.5,
+  "excerpt_duration_seconds": 45,
+  "checked_date": "2026-11-01",
+  "paid_license_or_purchase": false,
+  "credit_delivery": "End-card credit, MP4 comment metadata, adjacent CREDITS.txt, source documentation and board candidate attribution.json",
+  "endorsement": false
+}

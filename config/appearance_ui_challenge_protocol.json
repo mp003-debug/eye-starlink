@@ -1,0 +1,74 @@
+{
+  "stage": "appearance_ui_challenge_20261026",
+  "software_tests": 260,
+  "entry_evidence": "data/private/bringup/appearance_parallel_check_20261025",
+  "plan": [
+    {
+      "phase": "before_close",
+      "target": "water",
+      "seconds": 6.0
+    },
+    {
+      "phase": "challenge_close",
+      "target": "water",
+      "seconds": 8.0
+    },
+    {
+      "phase": "after_close",
+      "target": "help",
+      "seconds": 6.0
+    },
+    {
+      "phase": "before_cover",
+      "target": "rest",
+      "seconds": 6.0
+    },
+    {
+      "phase": "challenge_cover",
+      "target": "rest",
+      "seconds": 8.0
+    },
+    {
+      "phase": "after_cover",
+      "target": "water",
+      "seconds": 6.0
+    },
+    {
+      "phase": "before_leave",
+      "target": "help",
+      "seconds": 6.0
+    },
+    {
+      "phase": "challenge_leave",
+      "target": "help",
+      "seconds": 8.0
+    },
+    {
+      "phase": "after_leave",
+      "target": "rest",
+      "seconds": 6.0
+    },
+    {
+      "phase": "before_blink",
+      "target": "water",
+      "seconds": 6.0
+    },
+    {
+      "phase": "challenge_blink",
+      "target": "water",
+      "seconds": 8.0
+    },
+    {
+      "phase": "after_blink",
+      "target": "help",
+      "seconds": 6.0
+    }
+  ],
+  "duration_seconds": 80,
+  "setup_seconds": "6-10 NEW center reference",
+  "audit": "Every interaction image320x240 saved after clean halt. Prompt timing is not truth: visually label closed/covered/absent separately from transitions.",
+  "criteria": "No raw/stable accepted region, progress or events during image-confirmed invalid frames. Report before/after target match, full dwell and timing continuity; no phase-forced reset. No speech/UART.",
+  "audio_enabled": false,
+  "uart_enabled": false,
+  "model_sha256": "c1e0653f35a08db2e37a8fe2138234095c6584bd5be7f2f953c94ef684b972dd"
+}

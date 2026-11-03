@@ -1,0 +1,9 @@
+{
+  "stage": "appearance_return_visual_trial_20261025",
+  "entry_evidence": "data/private/bringup/appearance_parallel_check_20261025",
+  "software_tests": 256,
+  "plan": "6-10s NEW center then35s muted UI, repeat more/back at least3 times; direct center gaze after more",
+  "audio_enabled": false,
+  "uart_enabled": false,
+  "model_pack_sha256": "c1e0653f35a08db2e37a8fe2138234095c6584bd5be7f2f953c94ef684b972dd"
+}

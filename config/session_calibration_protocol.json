@@ -1,0 +1,31 @@
+{
+  "frozen_before_live": true,
+  "scope": "Explicit current-session fitting followed by a separate new independent check; no UI action/audio/UART",
+  "fit_stage": "appearance_session_fit_20261026",
+  "check_stage": "appearance_session_check_20261026",
+  "source_model_sha256": "c1e0653f35a08db2e37a8fe2138234095c6584bd5be7f2f953c94ef684b972dd",
+  "fit_targets": [
+    "center_reference",
+    "center",
+    "water",
+    "rest",
+    "help",
+    "more"
+  ],
+  "samples": 30,
+  "fit_examples": 25,
+  "excluded_reference_examples": 5,
+  "check_targets": [
+    "center_reference",
+    "rest",
+    "help",
+    "center",
+    "more",
+    "water"
+  ],
+  "seconds_per_target": 6,
+  "settle_seconds": 2,
+  "positive_gate": "Each target at least60percent stable matching, zero raw/stable wrong, longest stable at least1s; no threshold changes.",
+  "lamp_on": false,
+  "independent_check_passed": false
+}

@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-25",
+  "fixed_before_capture": true,
+  "runtime_manifest": {
+    "expected_files": {
+      "src/eye_tracker/board.py": "713e7fae4b0a0357c2c0ee31b0e9905e9a77fa237bcccb3d33ef2b696e2c934b",
+      "src/eye_tracker/appearance.py": "20333f92e138caa261664a76d71e30aa07281fdf65077a8f4be5b632a67aac1b",
+      "src/eye_tracker/appearance_diagnostic.py": "ad11e52e069a25bdbedd8748798e01ef9944513ab8071b06680294175a33314c",
+      "data/private/diagnostic/model.npz": "f4d6cff76449b8909ec088db5ffc2ff6f211c5f96df70f52ed9e6421f128dce6"
+    },
+    "expected_bit_sha256": "1d546b9c7b63825ce075798df87aacccfa78fe37d3d26e379fd1dec6aca59ebc",
+    "files": {
+      "src/eye_tracker/board.py": "993758fca94919949654db1bcce338ff0914250c5432b6b4175c4d45f887e4e8",
+      "src/eye_tracker/invalid_input_diagnostic.py": "5e4401dbc002ce51a1db70c90add65f0a2fc33bf1cd8534a944d767f26737bad",
+      "assets/invalid_input_prompts.npz": "8872b041f244c901ff6ae805d4bd01e38608787553486a846ce47ba21347c5b3"
+    },
+    "runtime_files": {
+      "src/eye_tracker/board.py": "993758fca94919949654db1bcce338ff0914250c5432b6b4175c4d45f887e4e8",
+      "src/eye_tracker/appearance.py": "20333f92e138caa261664a76d71e30aa07281fdf65077a8f4be5b632a67aac1b",
+      "src/eye_tracker/appearance_diagnostic.py": "ad11e52e069a25bdbedd8748798e01ef9944513ab8071b06680294175a33314c",
+      "data/private/diagnostic/model.npz": "f4d6cff76449b8909ec088db5ffc2ff6f211c5f96df70f52ed9e6421f128dce6",
+      "src/eye_tracker/invalid_input_diagnostic.py": "5e4401dbc002ce51a1db70c90add65f0a2fc33bf1cd8534a944d767f26737bad",
+      "assets/invalid_input_prompts.npz": "8872b041f244c901ff6ae805d4bd01e38608787553486a846ce47ba21347c5b3"
+    },
+    "scope": "Frozen candidate classifier; challenge prompts and bounded image evidence only; no actions or phase-forced rejection."
+  },
+  "patch_sha256": "9e876516e9ec7acea60609f046d6efcba27a176086c5e00468c34252ec1246e5",
+  "initial_seconds": 6,
+  "center_reference_seconds": 6,
+  "phases": [
+    {
+      "target": "water",
+      "sequence": [
+        "before_6s",
+        "challenge_8s",
+        "after_6s"
+      ],
+      "challenge": "close"
+    },
+    {
+      "target": "help",
+      "sequence": [
+        "before_6s",
+        "challenge_8s",
+        "after_6s"
+      ],
+      "challenge": "cover"
+    },
+    {
+      "target": "rest",
+      "sequence": [
+        "before_6s",
+        "challenge_8s",
+        "after_6s"
+      ],
+      "challenge": "leave"
+    },
+    {
+      "target": "more",
+      "sequence": [
+        "before_6s",
+        "challenge_8s",
+        "after_6s"
+      ],
+      "challenge": "blink"
+    }
+  ],
+  "duration_seconds_nominal": 92,
+  "audit": "Every captured challenge frame downsampled nearest2 to320x240; bounded720images. Native5samples perphase additionally. Save after clean DMA halt.",
+  "ground_truth": "Prompt phase is not ground truth. Inspect images to label closed/covered/absent and transition separately; cannot pass from rejected-frame totals alone.",
+  "pass_to_next": "No stable accepted region during image-confirmed invalid periods; report raw accepts and recovery behavior; positive before/after must have zero settled stable wrong and usable coverage in every phase. No action enable in this mode.",
+  "software_tests_passed": 207,
+  "model_or_classifier_changed": false,
+  "actions_enabled": false
+}

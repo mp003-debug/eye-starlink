@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-29",
+  "vivado": "2026.1",
+  "part": "xc7z020clg400-1",
+  "stage": "upgrade_streaming_audio_uart_video",
+  "implementation_completed": true,
+  "audio": {
+    "ip_version": "0x00020000",
+    "stream_banks": 2,
+    "samples_per_bank": 16384,
+    "sample_rate": 16000,
+    "board_tested": false
+  },
+  "final_validation_export_exit_code": 0,
+  "final_validation_log": "build.log",
+  "uart": {
+    "baud": 115200,
+    "format": "8N1",
+    "base": "0x42C00000",
+    "rx": "Arduino D0/T14",
+    "tx": "Arduino D1/U12",
+    "rx_cdc": "9  CDC-3  Info      1-bit synchronized with ASYNC_REG property      4  False Path  event_uart_rx  eye_tracker_bd_i/event_uart_0/U0/UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/syncstages_ff_reg[0]/D",
+    "board_tested": false
+  },
+  "formats": {
+    "capture": "GRAY8",
+    "display": "RGB565_LE"
+  },
+  "diagnostic_version": "0x00010003",
+  "gpio_status_width": 7,
+  "timing": {
+    "wns_ns": 2.209,
+    "tns_ns": 0.0,
+    "whs_ns": 0.015,
+    "ths_ns": 0.0,
+    "wpws_ns": 3.75,
+    "applies_to": "existing constraints; HDMI external timing remains pending"
+  },
+  "resources": {
+    "lut": 4563,
+    "ff": 6263,
+    "bram_tiles": 40,
+    "dsp": 0
+  },
+  "drc": {
+    "errors": 0,
+    "warnings": 12,
+    "advisories": 2
+  },
+  "cdc": {
+    "raw_critical": 6,
+    "reviewed_vdma_fifo36e1_critical": 6,
+    "custom_rtl_reported_critical": 0,
+    "review": "reports/cdc_review.txt"
+  },
+  "pending_review": [
+    "HDMI output external timing relationship pending; asynchronous UART TX has no external clock",
+    "reset, synchronizer placement and mailbox methodology warnings",
+    "DRC warnings PDCN-1569 REQP-1839 RTSTAT-10"
+  ],
+  "old_repository_runtime_dependency": false,
+  "board_tested_by_build": false,
+  "optics_validated": false,
+  "artifacts": {
+    "fpga/project/eye_tracker.xpr": {
+      "bytes": 15592,
+      "sha256": "aa6ad2816d36a96f22952853819d482b9e1a19f5ccc3c36c76b86cd6eec15814"
+    },
+    "build/fpga/eye_tracker.bit": {
+      "bytes": 4045777,
+      "sha256": "662895c04211deb32e805b7f205251faa8abf0d87e62992abac631b864f75c20"
+    },
+    "build/fpga/eye_tracker.hwh": {
+      "bytes": 469114,
+      "sha256": "d2b3120f4a7598ab7c67294592763e79176815ecead5d3c76d11daebf5b2eb50"
+    }
+  },
+  "source_hashes": {
+    "fpga/constraints/audio_aux.xdc": "6055831f2b4be66b1593a6e183af61c059abb286da3d6d5e8635828b77eb8a9a",
+    "fpga/constraints/camera_diag.xdc": "79bcee1c15dad0ccf937b726475d6fff13c5de97d623d834baeb5cab6587eef9",
+    "fpga/constraints/ddr_cdc.xdc": "2625fb2237aa9ae4653a2f5d1f7bc4a40e14224fa8eebd00bc8548132d17f100",
+    "fpga/constraints/event_uart.xdc": "22841813e4394e63c205a7404ca4d5bb183f5ab39ab02fa1a554f460b6f8d485",
+    "fpga/rtl/audio_aux_axi.v": "a7dfd3f26c4d096450ee4537a581309293c539ca51f2651f3df5f343c19c3d93",
+    "fpga/rtl/axis_video_sink.v": "e7be0aa3f4680dac64a1189b7d820949353e9ddf4dba23f73be5437d3d9dc6b6",
+    "fpga/rtl/camera_ddr_video.v": "3bfa3bf5425812a33213d804e8089c4349afdd7f23044895d28086f20123231e",
+    "fpga/rtl/camera_diag_axi.v": "9344185b2a460c32785da8b43e30e6d30d350603a6c069dfbb4bead4a287f6c5",
+    "fpga/rtl/camera_i2c_pins.v": "a81319b148d7c356036837b25ec2ccbbb14ea5f17f052c36aca43babd301f3e7",
+    "fpga/rtl/clk_gen.v": "894d6fe8776dac77b24f573305789ea83ed45ea7e3ce8b9e6f5b240ed8739398",
+    "fpga/rtl/dvp_axis_queue.v": "01a997ee119a13b265da5ae36f00e4d8ef77c588b6f086a8fd23767c16ad3a33",
+    "fpga/rtl/hdmi_tx.v": "2ac416211475a57f10a546c496d0843955f4b541cb9e592ae8c854fc32b02649",
+    "fpga/rtl/mt9v034_dvp_frontend.v": "5954228b33220efe3f6c5651cad81180ab50a29f98308be915b41d1cd7092ff9",
+    "fpga/rtl/rgb565_to_rgb888.v": "2149de1ee189a3ca2d2568c4e581bb3d6be215b2763f251769ba77356f8bea7e",
+    "fpga/rtl/serializer_10to1.v": "4d2f0ec60eb649164a491a24e6636cfbcecf4e1e53185999228d7197130a57ed",
+    "fpga/rtl/tmds_encoder.v": "2862486cf1c1b53822d632c73a75508804343392761b980583db3fbd0c338b22",
+    "fpga/rtl/video_timing.v": "926fa44b2ffd385534a2307048903174bef92eab69e7cc8c1d0c28c1f728e4c3",
+    "fpga/scripts/add_audio_aux.tcl": "f9bfa72811afefafdc1f3bf2c36454321a9a5b98f2e74fa0e1e43c682f5471fd",
+    "fpga/scripts/add_event_uart.tcl": "400c00b630b290ede2b566ce11792512a6acfa0368f7be8dc6a5d5d23de9c8b7",
+    "fpga/scripts/build_project.tcl": "d1cab8f374b5456276a10e1c1148df21348b4ea0fac1301f4ab03f408e66511a",
+    "fpga/scripts/create_project.tcl": "e86412313fbee508be56a21d1ffe0abb4a6b2292ae57a0d32c22e7c84b989916",
+    "fpga/scripts/export_bitstream.tcl": "151296224748198bca1d1d1cc55e63038f3b0184912cb486ae17973d3d549783",
+    "fpga/scripts/exported_bd.tcl": "1184d923b6d19c23f99399a494a19881ffd40e3d3d19443250f3ddbf682a8d84",
+    "fpga/scripts/review_ddr_cdc.tcl": "b8609283c39346ab8b17f90adb787514977d76df7def45ab015161a9d4b942c3",
+    "fpga/scripts/simulate_audio.tcl": "14990afb420c7bd4f2cbb1cd39ee8c2330031d9a2e09c7ab1348d0626ce17ccd",
+    "fpga/scripts/simulate_capture.tcl": "35e44ec441eec368b09822218b17b3058289148a7bf13455f2a9d8fa98861081",
+    "fpga/scripts/simulate_display.tcl": "f029baed750f68062b3310d092eeaa910e1fe2c3c8f9d1139b27f53ce996a08a",
+    "fpga/scripts/simulate_i2c.tcl": "7d3494cc6128891d6a5d583efd4572f6bbc7671edf78fd3723e93756e18b2534",
+    "fpga/scripts/sync_project.tcl": "945a7263df4de5b57e314b91387f786fad79c332499cd34bce821c1356134d50"
+  }
+}

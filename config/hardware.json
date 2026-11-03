@@ -1,0 +1,281 @@
+{
+  "board": "PYNQ-Z2",
+  "part": "xc7z020clg400-1",
+  "sensor_module": "ATK-MT9V034 (PCB V1.5)",
+  "screen_inches": 9,
+  "working_distance_cm": [
+    30,
+    45
+  ],
+  "ir_cut_present": null,
+  "ir_cut_evidence": "user_relayed_customer_service_2026-10-20_provisional_not_physically_verified",
+  "built_in_nir_illumination": false,
+  "planned_wavelength_nm": 850,
+  "optics_validated": false,
+  "illumination_safety_validated": false,
+  "sensor_image": [
+    752,
+    480
+  ],
+  "capture_image": [
+    640,
+    480
+  ],
+  "display_image": [
+    640,
+    480
+  ],
+  "capture_format": "GRAY8",
+  "display_format": "RGB565_LE",
+  "capture_stride_bytes": 640,
+  "display_stride_bytes": 1280,
+  "display_color_board_validated": true,
+  "physical_modification_state": "MTV12MP5C installed2026-10-23; paper lamp-response and refocus2026-10-24, user reports sharper/stable image. Lamp-OFF natural-posture eye framing observed; fine NIR pupil/glint quality and gaze range unvalidated.",
+  "illuminator_acquired": true,
+  "illuminator_driver_acquired": false,
+  "lens_mount_verified": false,
+  "lens_focal_length_mm": null,
+  "module_pcb_revision": "V1.5",
+  "module_pcb_silkscreen": "ATK-MC9V034 V1.5",
+  "module_revision_evidence": "hardware/photos/camera_front.jpg",
+  "sensor_chip_marking_verified": false,
+  "module_reference_schematic": "references/atk_mt9v034_v14_schematic.pdf",
+  "reference_revision_matches_actual_module": false,
+  "v15_electrical_compatibility_verified": false,
+  "ir_cut_reported_present": true,
+  "ir_cut_location": null,
+  "lens_external_thread_visible": true,
+  "lens_side_screw_visible": true,
+  "lens_mount_thread": null,
+  "lens_850nm_transmission_verified": false,
+  "adapter_pmod_continuity_verified_this_stage": false,
+  "adapter_switch_logic_verified_this_stage": false,
+  "purchase_url": "https://item.m.jd.com/product/10114211122946.html",
+  "purchase_optical_specifications_retrieved": false,
+  "photo_manifest": "hardware/photos/manifest.json",
+  "sensor_pixel_pitch_um": 6.0,
+  "sensor_pixel_pitch_source": "onsemi MT9V034 datasheet, key performance parameters",
+  "reported_optics": {
+    "source": "user_relayed_customer_service",
+    "date": "2026-10-20",
+    "evidence_status": "provisional; user explicitly cautions that customer service may be wrong",
+    "stock_lens_mount_thread": "M12x0.5",
+    "stock_lens_focal_length_mm": 2.8,
+    "stock_ir_cut_present": true,
+    "stock_ir_cut_location": "inside lens barrel",
+    "compatible_nir_lens_reported": {
+      "mount_thread": "M12x0.5",
+      "optical_format": "1/3 inch",
+      "ir_cut_present": false,
+      "wavelength_nm": 850,
+      "focal_length_mm": 2.8,
+      "focus_distance_cm": [
+        32,
+        35
+      ],
+      "exact_model": null,
+      "independently_verified": false
+    }
+  },
+  "reported_revision_compatibility": {
+    "source": "user_relayed_customer_service_2026-10-20",
+    "unchanged": [
+      "DVP",
+      "I2C",
+      "power supply interface",
+      "header pinout"
+    ],
+    "changes": [
+      "PCB routing",
+      "minor power filtering optimizations"
+    ],
+    "clock_frequency_explicitly_confirmed": false,
+    "independently_verified": false
+  },
+  "planned_nir_lens": {
+    "preferred_trial_focal_length_mm": 12.0,
+    "wider_field_comparison_focal_length_mm": 8.0,
+    "mount_requirement": "M12x0.5, subject to actual module fit",
+    "sensor_coverage_requirement": "at least the MT9V034 4.512 x 2.880 mm active area",
+    "ir_cut_present_requirement": false,
+    "wavelength_nm": 850,
+    "required_focus_distance_cm": [
+      30,
+      45
+    ],
+    "selected_model": "MTV12MP5C",
+    "purchased": true,
+    "fit_and_focus_verified": false,
+    "basis": "paraxial sampling estimate; not a validated gaze performance claim",
+    "comparison_lens_purchase": "conditional_only_after_primary_lens_field_test",
+    "preferred_focus_adjustment_margin_cm": [
+      25,
+      50
+    ],
+    "received": true,
+    "received_reported_by_user": "2026-10-23",
+    "installed": true,
+    "installation_reported_by_user": "2026-10-23",
+    "visible_light_focus_check": {
+      "date": "2026-10-23",
+      "distance_cm_approx": 40,
+      "ruler_ticks_resolved_in_raw_frame": true,
+      "assessment": "data/private/bringup/lens_40cm/assessment.json",
+      "fixed_focus_range_verified": false,
+      "nir_performance_verified": false,
+      "sample_distances_cm_approx": [
+        35,
+        40,
+        45
+      ],
+      "visual_observation": "40/45cm sharper;35cm softer in this sample set; qualitative only"
+    },
+    "paper_nir_refocus_check": {
+      "date": "2026-10-24",
+      "assessment": "data/private/bringup/nir_focus/assessment.json",
+      "user_reports_sharper_and_stable": true,
+      "fine_focus_validated": false,
+      "pupil_glint_validated": false
+    }
+  },
+  "reported_speaker": {
+    "model": "Newman BS02",
+    "inputs": [
+      "Bluetooth",
+      "3.5 mm AUX",
+      "USB storage playback",
+      "TF storage playback"
+    ],
+    "source": "user_2026-10-20",
+    "preferred_input": "3.5 mm AUX",
+    "board_audio_validated": true,
+    "aux_cable": {
+      "present": true,
+      "user_can_order": true,
+      "expected_arrival_if_ordered": "2026-10-22",
+      "specification": "3.5mm TRS male-to-male stereo AUX, about 1m",
+      "purchase_confirmed": true,
+      "arrival_confirmed_by_user": "2026-10-22"
+    },
+    "board_audio_digital_path_validated": true,
+    "board_audio_analog_listening_validated": true,
+    "board_audio_validated_scope": "Three phrases heard clearly; user confirms cancel/pause immediate stop and final resume silence. BTN2 suppression measured separately; BTN3 exit in initial audible run. Per-stage software/package/gain attribution retained.",
+    "headphone_gain_db": -6,
+    "volume_accepted_by_user": true,
+    "speech_resume_verified": true
+  },
+  "procurement_constraints": {
+    "budget_cny_max": 1000,
+    "requested_delivery_days_max": 3,
+    "shipping_verified": false,
+    "allowed_platforms": [
+      "Taobao",
+      "JD"
+    ],
+    "assistant_exact_sku_review_before_purchase": true,
+    "necessary_items_only": true,
+    "shipping_area": "广西南宁市西乡塘区",
+    "purchase_approved_items": [],
+    "workflow": "assistant provides specifications; user finds Taobao/JD listings; assistant reviews exact SKU before user purchases"
+  },
+  "verified_network": {
+    "date": "2026-10-20",
+    "pc_wired_ipv4": "192.168.2.1",
+    "board_ipv4": "192.168.2.99",
+    "hostname": "pynq",
+    "board_environment": "Pynq-Z2",
+    "device_tree_compatible": "xlnx,zynq-7000",
+    "verification": "SSH system read; not new overlay validation"
+  },
+  "display_validation_scope": "Current audio-enabled bitstream: optimized camera preview 30.056s/322 switches/10.713fps, user confirms improved responsiveness and stable display; separate 19-scenario synthetic UI regression 18.141s/362 updates. No real gaze or extended reliability validation.",
+  "board_transport_evidence": "build/board/result.json",
+  "capture_single_frame_board_validated": true,
+  "capture_continuous_board_validated": true,
+  "capture_continuous_validation_scope": "Current final-audio bitstream: 322 fresh copies and confirmed display switches / 30.055860386s, 10.713384873fps. Setup preview only; no gaze rate or sensor-to-photon measurement. Historical higher copy throughput belongs to its own bitstream, clocks and static-UI workload.",
+  "working_distance_evidence": "provisional validation target following user request for distance tolerance; not optically verified",
+  "baseline_distance_cm": [
+    35,
+    40
+  ],
+  "historical_bench_distance_cm": [
+    32,
+    35
+  ],
+  "fixed_focus_depth_of_field_validated": false,
+  "same_calibration_distance_tolerance_validated": false,
+  "sensor_i2c_board_validated": true,
+  "sensor_address_7bit": 72,
+  "sensor_chip_id": 4900,
+  "sensor_chip_id_scope": "0x1324 shared by MT9V024/034-family; does not replace package-marking identification",
+  "temporary_exposure_gain_and_restore_board_validated": true,
+  "ordered_illuminator": {
+    "sku": "12v 24灯板 850nm（配电源）",
+    "paid_cny": 22.48,
+    "ordered_by_user": true,
+    "received": true,
+    "actual_electrical_and_optical_output_verified": false,
+    "human_exposure_approved": false,
+    "received_reported_by_user": "2026-10-24",
+    "power_state_reported_by_user": "Lamp kept OFF during eye_region and fixation. Last run halted both DMA cleanly; PYNQ idle/on, SSH closed.",
+    "physical_sku_and_adapter_verified": false,
+    "arrival_photo_evidence": "hardware/photos/procurement/arrival_manifest_20261024.json",
+    "adapter_received": true,
+    "photo_label_observations": {
+      "lamp_input_marking": "12V",
+      "pcb_marking_provisional_transcription": "HTX-524-IR",
+      "adapter_model_label": "A-1",
+      "adapter_output_nominal_v_dc": 12,
+      "adapter_rated_output_current_a": 2.0,
+      "adapter_dc_barrel_polarity_label": "center-positive",
+      "adapter_input_label": "AC100-240V50/60Hz0.8A",
+      "basis": "photo labels only; no electrical measurement",
+      "connector_pairing": "Original factory matching DC plug/socket confirmed by user2026-10-24; no rewiring.",
+      "actual_lamp_power_w": null,
+      "optical_output": null,
+      "automatic_light_control_verified": false,
+      "dimming_verified": false,
+      "wavelength_nm": "850 per ordered SKU, not measurable from photos"
+    },
+    "bench_response_verified": true,
+    "bench_assessment": "data/private/bringup/illumination_on_final/assessment.json"
+  },
+  "dynamic_camera_preview_board_validated": true,
+  "dynamic_communication_ui_synthetic_board_validated": true,
+  "illumination_bench_check": {
+    "date": "2026-10-24",
+    "assessment": "data/private/bringup/illumination_on_final/assessment.json",
+    "paper_response_verified": true,
+    "exposure_rows_paper_starting_point": 24,
+    "gain_units": 16,
+    "human_or_eye_feature_validation": false,
+    "selected_sku_spectrum_measured": false
+  },
+  "ambient_light_eye_framing": {
+    "date": "2026-10-24",
+    "assessment": "data/private/bringup/eye_natural/assessment.json",
+    "complete_eye_visible": true,
+    "natural_posture_more_comfortable_user_reported": true,
+    "lamp_on": false,
+    "eye_region_tracking_implemented": true,
+    "gaze_validated": false,
+    "eye_region_tracking_assessment": "data/private/bringup/eye_region/assessment.json",
+    "instructed_target_collection": "data/private/bringup/fixation/assessment.json",
+    "pupil_glint_validated": false
+  },
+  "board_power": {
+    "since": "2026-10-28",
+    "previous_user_report": "PC MicroUSB",
+    "current_user_report": "DC barrel; J9REG; PC MicroUSB unplugged",
+    "adapter_label": {
+      "model": "ZXD-1230",
+      "volts_dc": 12,
+      "rated_amperes": 3,
+      "polarity": "center-positive"
+    },
+    "photo": "hardware/photos/pynq_power_adapter_20261028.jpg",
+    "photo_sha256": "63c0bf48f8cd83f6b85247a568666114ffcf60df7f776658613dc053411269e8",
+    "voltage_measured": false,
+    "comparison_assessment": "data/private/bringup/release_reg_paper_20261028/assessment.json",
+    "long_run_stability_validated": false
+  }
+}

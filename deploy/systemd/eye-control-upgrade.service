@@ -1,0 +1,20 @@
+[Unit]
+Description=Isolated Eye Tracker Upgrade manual session
+After=local-fs.target bootpy.service clear_pl_statefile.service
+RequiresMountsFor=/home/xilinx/Eye_Tracker_Upgrade_Version
+
+[Service]
+Type=exec
+User=root
+WorkingDirectory=/home/xilinx/Eye_Tracker_Upgrade_Version
+Environment=PYTHONUNBUFFERED=1
+ExecStartPre=/usr/bin/python3 /home/xilinx/Eye_Tracker_Upgrade_Version/tools/upgrade_preflight.py --owners
+ExecStart=/bin/bash /home/xilinx/Eye_Tracker_Upgrade_Version/tools/run_eye.sh --profile data/private/profiles/upgrade_check.json --quick-phrases --music
+Restart=no
+KillSignal=SIGINT
+KillMode=control-group
+SendSIGKILL=no
+TimeoutStopSec=infinity
+StandardOutput=journal
+StandardError=journal
+# Deliberately no Install section: manual tests only, no boot enablement.

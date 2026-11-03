@@ -1,0 +1,47 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Nov  3 14:30:46 2026
+| Host         : LAPTOP-DPSVKCTF running 64-bit major release  (build 9200)
+| Command      : report_timing -from [get_cells -hier -filter {NAME =~ */audio_aux_0/*/au_sdata_reg}] -to [get_ports au_sdata] -max_paths 1 -file <project>/build/neural_upgrade_20261103/fpga/reports/audio_output.rpt
+| Design       : eye_tracker_bd_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             17.410ns  (required time - arrival time)
+  Source:                 eye_tracker_bd_i/audio_aux_0/inst/au_sdata_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            au_sdata
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            25.000ns  (MaxDelay Path 25.000ns)
+  Data Path Delay:        7.590ns  (logic 3.609ns (47.542%)  route 3.982ns (52.458%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 25.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X56Y92                                      0.000     0.000 r  eye_tracker_bd_i/audio_aux_0/inst/au_sdata_reg/C
+    SLICE_X56Y92         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  eye_tracker_bd_i/audio_aux_0/inst/au_sdata_reg/Q
+                         net (fo=1, routed)           3.982     4.438    au_sdata_OBUF
+    G18                  OBUF (Prop_obuf_I_O)         3.153     7.590 r  au_sdata_OBUF_inst/O
+                         net (fo=0)                   0.000     7.590    au_sdata
+    G18                                                               r  au_sdata
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   25.000    25.000    <hidden>
+                         output delay                -0.000    25.000    <hidden>
+  -------------------------------------------------------------------
+                         required time                         25.000    <hidden>
+                         arrival time                          -7.590    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 17.410    <hidden>
+
+
+
+

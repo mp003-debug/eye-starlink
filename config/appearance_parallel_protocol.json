@@ -1,0 +1,12 @@
+{
+  "stage": "appearance_parallel_check_20261025",
+  "software_tests": 254,
+  "patch_sha256": "c86835998807aff79e4b64c5a489b51806fb2b6b9ce404aaf7d40fe012e29d40",
+  "model_pack_sha256": "c1e0653f35a08db2e37a8fe2138234095c6584bd5be7f2f953c94ef684b972dd",
+  "frozen_before_live": true,
+  "actions_enabled": false,
+  "plan": "43s center then rest/help/center/more/water. Same camera framing; lampOFF. No seed, strict global same-eye corner-pair acquisition then frozen local search,5 new center references.",
+  "entry_gate": "Each scored target >=60percent stable matches, zero raw/stable wrong, >=1s continuous stable. No gate changes from outcome.",
+  "development": "Fixed existing25 current-session templates; original fit/images and latest framing used for alignment development, not acceptance.",
+  "scheduling": "Scheduling-only two independent corner searches in parallel. Both readers joined before return, identical operations/gates/model. Fresh evidence still required by source-hash guard."
+}
