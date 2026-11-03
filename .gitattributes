@@ -14,3 +14,5 @@
 *.rgb565 binary
 *.otf binary
 *.png binary
+# Runtime manifests hash exact bytes, including JSON line endings.
+assets/** -text
