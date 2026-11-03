@@ -10,8 +10,9 @@ OUT=(ROOT/os.environ.get('EYE_SHARING_CHECK_OUTPUT','build/receiver_sharing_2026
 if (ROOT/'build').resolve() not in OUT.parents:raise ValueError('check output must stay in upgrade build')
 OUT.mkdir(parents=True,exist_ok=True)
 GCC=__import__('os').environ.get('CC','gcc')
-target=OUT/'sharing_chain.dll'
-subprocess.run([GCC,'-std=c99','-Wall','-Werror','-shared','-I'+str(LINK),
+target=OUT/('sharing_chain.dll' if os.name=='nt' else 'sharing_chain.so')
+pic=[] if os.name=='nt' else ['-fPIC']
+subprocess.run([GCC,'-std=c99','-Wall','-Werror','-shared',*pic,'-I'+str(LINK),
     str(ROOT/'comm/receiver_upgrade/tests/share_chain_host.c')]+[str(LINK/n) for n in
     ('eye_event.c','eye_endpoint.c','eye_fanout.c','eye_share.c')]+['-o',str(target)],check=True)
 lib=ctypes.CDLL(str(target));lib.chain_exchange.argtypes=[ctypes.c_char_p,ctypes.c_uint64,ctypes.c_void_p]

@@ -24,7 +24,7 @@ static void text(uint8_t *f,const uint8_t *s,unsigned length,int x,int y,int col
         ++n;
     }
 }
-void eye_share_render(const eye_message *m,unsigned node,int acknowledged,int stale,uint8_t *frame) {
+void eye_share_render(const eye_message *m,unsigned node,int acknowledged,int stale,uint8_t frame[48000]) {
     memset(frame,255,48000);
     box(frame,0,0,480,116,1);
     text(frame,share_titles[m->category-1].text,share_titles[m->category-1].length,32,42,16,1,0);
